@@ -1,0 +1,51 @@
+package color;
+import projection.*;
+import
+/**
+ * <h1>TriangleFill</h1>
+ * Fills areas with color
+ * @author MJ
+ */
+public class TraingleFill() {
+  /**
+  *Instance variables
+  */
+  Vector[] x;
+  ArrayList<Vector> z;
+  Vector centre;
+  Color chosen;
+  Vector highX = x[0], lowX = x[0], highY = x[0], lowY = x[0];
+
+  /**
+  *Public constructor
+  */
+  public TriangleFill(Vector[] y, Color z) {
+    x = y;
+    chosen = z;
+    scan();
+  }
+
+  /**
+  *Get farthest points xy plances
+  @Deprecated
+  */
+  public void scan() {
+    for (int i = 0; i < x.length; i++) {
+      if (x[i].get(0) > highX.get(0)) {
+        highX = x[i];
+      }else if (x[i].get(0) < lowW.get(0)) {
+        lowX = x[i];
+      }else if (x[i].get(1) > highY.get(1)) {
+        highY = x[i];
+      }else if (x[i].get(1) < lowY.get(1)) {
+        lowY = x[i];
+      }
+    }
+  }
+
+  /**
+  *Fill the area
+  */
+
+
+}

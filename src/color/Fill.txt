@@ -1,0 +1,26 @@
+package color;
+import java.awt.Color;
+import projection.*;
+/**
+ * <h1>Fill</h1>
+ * Fills areas with color
+ * @author MJ
+ */
+public class Fill {
+  /**
+  *Fill
+  */
+  public static void fill(Vector[] in, Color cl) {
+    double []x = new double[in.length];
+    double []y = new double[in.length];
+    for (int i = 0; i < x.length; i++) {
+      x[i] = in[i].get(0);
+      y[i] = in[i].get(1);
+    }
+    Color before = StdDraw.getPenColor();
+    StdDraw.setPenColor(cl);
+    StdDraw.filledPolygon(x, y);
+    StdDraw.setPenColor(before);
+  }
+
+}
