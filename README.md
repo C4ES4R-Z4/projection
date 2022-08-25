@@ -25,12 +25,14 @@ For the Spinning Cube:
 ```cd bin
 java SpinningCube
 ```
+<img src="images/cube.gif" width="418" height="336"/>
 
 For the Polygon:
 
 ```cd bin
 java Polygon
 ```
+<img src="images/polygon.gif" width="456" height="400"/>
 
 ## Bugs and Problems
 
